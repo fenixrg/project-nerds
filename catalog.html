@@ -36,8 +36,11 @@
                 <form method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Стоимость:</legend>
-                        <input type="range" min="0" max="15000">
-                        <!--Здесь не знаю как лучше сделать-->
+                        <input type="range" min="0" max="15000" name="price">
+                        <p>
+                            <label>От<input type="text" name="start" value="0"></label>
+                            <label>До<input type="text" name="end" value="15000"></label>
+                        </p>
                     
                     </fieldset>
 
@@ -45,19 +48,19 @@
                         <legend>Сетка:</legend>
                         <p>
                             <label>
-                                <input type="radio" name="adaptive" checked>
+                                <input type="radio" value="adaptive" name="grid" checked>
                                 Адаптивная
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="radio" name="fixed">
+                                <input type="radio" name="grid" value="fixed">
                                 Фиксированная
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="radio" name="rubber">
+                                <input type="radio" name="grid" value="rubber">
                                 Резиновая
                             </label>
                         </p>
@@ -103,62 +106,78 @@
 
             <section>
                 <h2>Каталог товаров</h2>
-                <p>Сортировать:</p>
-                <!--Сортировку нужно делать ссылками, кнопками или формой?-->
-                <ul>
-                    <li>
-                        
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="Sedona">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="Pink">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="Borodinski">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="Mishka">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="study">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/150x100" alt="Кваст">
-                        </a>
-                    </li>
-                </ul>
+                <section>
+                    <h3>Сортировка</h3>
+                    <p>Сортировать:</p>
+                    <ul>
+                        <li>
+                            <a href="#">По цене</a>
+                        </li>
+                        <li>
+                            <a href="#">По типу</a>
+                        </li>
+                        <li>
+                            <a href="#">По названию</a>
+                        </li>
+                        <li>
+                            <a href="#">По убыванию</a>
+                        </li>
+                        <li>
+                            <a href="#">По возрастанию</a>
+                        </li>
+                    </ul>
+                </section>
                 
-                <ul>
-                    <li>
-                        <a>1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">Следующая</a>
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <h3>Каталог</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="Sedona">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="Pink">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="Borodinski">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="Mishka">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="study">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://via.placeholder.com/150x100" alt="Кваст">
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <ul>
+                        <li>
+                            <a>1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">Следующая</a>
+                        </li>
+                    </ul>
+                </section>
         </main>
 
 
