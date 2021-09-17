@@ -8,7 +8,7 @@
     <body>
         <header>
             <nav>
-                <a>
+                <a href="index.html">
                     <img src="https://via.placeholder.com/150x100" alt="Логотип">
                 </a>
                 <ul>
@@ -31,7 +31,74 @@
         </header>
 
         <main>
+            <section>
+                <h2>Фильтр</h2>
+                <form method="GET">
+                    <fieldset>
+                        <legend>Стоимость:</legend>
+                        <input type="range" min="0" max="15000">
+                        <!--Здесь не знаю как лучше сделать-->
+                    
+                    </fieldset>
 
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <p>
+                            <label>
+                                <input type="radio" name="adaptive" checked>
+                                Адаптивная
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="fixed">
+                                Фиксированная
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="rubber">
+                                Резиновая
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="slider" checked>
+                                Слайдер
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="
+                                advantages">
+                                Блок преимуществ
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="news" checked>
+                                Новости
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="galery">
+                                Галерея
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="cart">
+                                Корзина
+                            </label>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
         </main>
 
 
