@@ -268,7 +268,6 @@ dl dt .procent {
 /* Contacts */
 .contacts {
     background-color: var(--basic-white);
-    padding:
 }
 
 .contacts span {
@@ -317,4 +316,16 @@ dl dt .procent {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+}
+
+
+/*Catalog*/
+.name-catalog-page h1 {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.name-catalog-page {
+    background-color: var(--basic-gray);
 }

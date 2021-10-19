@@ -11,32 +11,39 @@
         <link rel="manifest" href="manifest.webmanifest">
     </head>
 
-    <body>
-        <header>
-            <h1>Магазин готовых шаблонов</h1> 
-            <nav>
-                <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
+    <body class="page-body">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a href= "index.html" class="main-header-logo">
+                    <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
                 </a>
-                <ul>
-                    <li>
+                <ul class="navigation-list">
+                    <li class="navigation-item">
                         <a href="blank.html">Студия</a>
                     </li>
-                    <li>
+                    <li class="navigation-item">
                         <a href="blank.html">Клиенты</a>
                     </li>
-                    <li>
-                        <a>Магазин</a>
+                    <li class="navigation-item">
+                        <a href="catalog.html">Магазин</a>
                     </li>
-                    <li>
+                    <li class="navigation-item">
                         <a href="blank.html">Контакты</a>
                     </li>
                 </ul>
-                <a href="blank.html">Корзина</a>
+                <div class="user-navigation">
+                    <a class="nav-cart" href="blank.html">
+                        <img src="img/basket.svg" width="15" height="11" alt="Корзина">
+                        Корзина</a>
+                </div>
+                
             </nav>
-                                               
         </header>
 
-        <main>
+        <main class="wrapper">
+            <section class="name-catalog-page">
+                <h1>Магазин готовых шаблонов</h1>
+            </section>
             <section>
                 <h2>Фильтр</h2>
                 <form method="GET" action="https://echo.htmlacademy.ru">
@@ -222,28 +229,42 @@
 
 
 
-        <footer>
-            <section>
+        <footer class="main-footer">
+            <section class="contacts">
                 <h2>Контакты</h2>
-                <p>NЁRDS DESIGN STUDIO</p>
+                <span>NЁRDS DESIGN STUDIO</span>
                 <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
                 </p>
                 <p>
-                    <a href="tel:+78122757575">тел.  +7 (812) 275-75-75</a>
+                    <a class="contacts-phone" href="tel:+78122757575">тел.  +7 (812) 275-75-75</a>
                 </p>
-                <a href="#">Напишите нам</a>
+                <a class="button red" href="#">Напишите нам</a>
+                <img src="img/map-and-marker.png" width="1440" height="416" alt="map">
             </section>
             
-            <section>
-                <img src="img/map.png" width="1440" height="416" alt="map">
-                <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
-                <ul>
-                    <li><a href="#">vk</a></li>
-                    <li><a href="#">fb</a></li>
-                    <li><a href="#">Insta</a></li>
+            <section class="social">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-button" href="#">
+                            <img src="img/icon-vk.svg" width="26.01" height="15" alt="Вконтакте">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="#">
+                            <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм">
+                        </a>
+                    </li>
                 </ul>
+            </section>
+
+            <section class="copyright">
                 <h2>Копирайт</h2>
-                <p>Давайте дружить, это выгодно!</p>
+                <span>Давайте дружить, это выгодно!</span>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
         </footer>
