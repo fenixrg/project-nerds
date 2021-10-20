@@ -168,7 +168,22 @@ img {
     opacity: 30%;
 }
 
+.telephones {
+    background-color: var(--basic-gray);
+}
 /* Features */
+.computer {
+    background-color: var(--basic-button-red);
+}
+
+.twotel {
+    background-color: var(--basic-button-green);
+}
+
+.presentation {
+    background-color: var(--basic-button-yellow);
+}
+
 .features span {
     font-weight: 500;
     font-size: 55px;
@@ -222,6 +237,10 @@ img {
 }
 
 /* Partners*/
+.partners-item img {
+    background-color: val(--basic-gray);
+}
+
 .partners-list {
     list-style: none;
 }
@@ -239,6 +258,10 @@ img {
 } 
 
 /* Statistic content*/
+.ill-logo {
+    background-color: val(--basic-button-red);
+}
+
 figcaption {
     font-weight: bold;
     font-size: 16px;  
@@ -319,6 +342,23 @@ dl dt .procent {
 }
 
 
+.modal {
+    background-image: url("backgroung.png");
+}
+
+.modal h2 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.modal label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
 /*Catalog*/
 .name-catalog-page h1 {
     font-weight: 500;
@@ -329,3 +369,4 @@ dl dt .procent {
 .name-catalog-page {
     background-color: var(--basic-gray);
 }
+
