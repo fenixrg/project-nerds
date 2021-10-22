@@ -31,6 +31,12 @@
 :root {
     --basic-black:#000;
     --basic-gray: #EEEEEE;
+    --basic-gray-border: #EEEEEE;
+    --basic-border: #D7DCDE;
+    --basic-border-hover:#B4B9BB;
+    --basic-border-novalid:#E74246;
+    --basic-gray-button-hover:#DFDFDF;
+    --basic-gray-button-active:#D5D5D5;
     --gray-contacts:#666666;
     --basic-button-red: #FB565A;
     --basic-button-red-hover:#E74246;
@@ -47,7 +53,8 @@
     --basic-gradient-active:linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
     --basic-white:#FFF;
     --basic-white-opacity30:rgba(255, 255, 255, 0.3);
-        
+    --basic-black-opacity30:rgba(0, 0, 0, 0.3);
+    --basic-gray-filter:#4D4D4D;
 }
 
 /* Global */
@@ -83,52 +90,59 @@ img {
     font-size: 16px;
     line-height: 18px;
     border: none;
-    border-radius: 3px;
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left:39px;
-    padding-right: 40px;
 }
 
-.red {
+.button-red {
     background-color: var(--basic-button-red);
 }
 
-.red:hover {
+.button-red:hover {
     background-color: var(--basic-button-red-hover);
 }
 
-.red:active {
+.button-red:active {
     background-color: var(--basic-button-red-active);
     color:var(--basic-white-opacity30);
 }
 
-.green {
+.button-green {
     background-color: var(--basic-button-green);
 }
 
-.green:hover {
+.button-green:hover {
     background-color: var(--basic-button-green-hover);
 }
 
-.green:active {
+.button-green:active {
     background-color: var(--basic-button-green-active);
     color:var(--basic-white-opacity30);
 }
 
-.yellow {
+.button-yellow {
     background-color: var(--basic-button-yellow);
 }
 
-.yellow:hover {
+.button-yellow:hover {
     background-color: var(--basic-button-yellow-hover);
 }
 
-.yellow:active {
+.button-yellow:active {
     background-color: var(--basic-button-yellow-active);
     color:var(--basic-white-opacity30);
 }
 
+.button-gray {
+    background-color: var(--basic-gray);
+}
+
+.button-gray:hover {
+    background-color: var(--basic-gray-button-hover);
+}
+
+.button-gray:active {
+    background-color: var(--basic-gray-button-active);
+    color:var(--basic-black-opacity30);
+}
 .content {
     font-weight: normal;
     font-size: 16px;
@@ -136,52 +150,52 @@ img {
 }
 
 /* Main navigation*/
-.main-header {
+.page-header {
     background-color: var(--basic-gray);
 }
 
-.main-navigation {
+.page-navigation {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     color:var(--basic-black);
 }
 
+.main-header-logo {
+    background-color: var(--basic-gray);
+}
+
 .navigation-list {
     list-style: none;
 }
 
-.main-navigation a, .user-navigation a{
+.page-navigation a, .user-navigation a{
     color:var(--basic-black);
 }
 
-.main-header-logo:hover {
+.page-header-logo:hover {
     opacity: 70%;
 }
 
-.main-navigation a:hover, .user-navigation a:hover{
+.page-navigation a:hover, .user-navigation a:hover{
     color:var(--basic-button-red);
 }
 
-.main-navigation a:active, .user-navigation a:active{
+.page-navigation a:active, .user-navigation a:active{
     color:var(--basic-black);
     opacity: 30%;
 }
 
-.telephones {
+.img-head {
     background-color: var(--basic-gray);
 }
+
+.nav-cart::before {
+    background-image: url("../img/basket.svg");
+} 
 /* Features */
-.computer {
-    background-color: var(--basic-button-red);
-}
-
-.twotel {
-    background-color: var(--basic-button-green);
-}
-
-.presentation {
-    background-color: var(--basic-button-yellow);
+.features-img {
+    background-color: var(--basic-gray);
 }
 
 .features span {
@@ -195,6 +209,18 @@ img {
 }
 
 /* Products */
+.product-img3  {
+    background-color: var(--basic-button-red);
+}
+
+.product-img1 {
+    background-color: var(--basic-button-green);
+}
+
+.product-img2 {
+    background-color: var(--basic-button-yellow);
+}
+
 .products-list {
     list-style:none;
 }
@@ -259,7 +285,7 @@ img {
 
 /* Statistic content*/
 .ill-logo {
-    background-color: val(--basic-button-red);
+    background-color: val(--basic-gray);
 }
 
 figcaption {
@@ -304,11 +330,16 @@ dl dt .procent {
     color: inherit;
 }
 
-.contacts p, .contacts .contacts-phone {
+.contacts p,
+.contacts .contacts-phone {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     color: var(--gray-contacts);
+}
+
+.contact-img {
+    background-color: val(--basic-gray);
 }
 
 /* Social */
@@ -341,9 +372,10 @@ dl dt .procent {
     line-height: 22px;
 }
 
-
+/* Modal */
 .modal {
-    background-image: url("backgroung.png");
+    background-image: url("../img/bg-white.svg");
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal h2 {
@@ -358,8 +390,41 @@ dl dt .procent {
     line-height: 18px;
 }
 
+.modal input, textarea  {
+    font:inherit;
+    background-color: transparent;
+    border: 2px solid var(--basic-border);
+}
+
+.modal input:hover, textarea:hover  {
+    border: 2px solid var(--basic-border-hover);
+}
+
+.close {
+    opacity: 30%;
+}
+
+.close:hover {
+    opacity: 100%;
+}
+
+.close:active {
+    opacity: 10%;
+}
 
 /*Catalog*/
+.button-black-font {
+    color:var(--basic-black);
+}
+
+/*Filter*/
+.filter input {
+    font:inherit;
+    background-color: transparent;
+    border: 2px solid var(--basic-gray-filter);
+}
+
+
 .name-catalog-page h1 {
     font-weight: 500;
     font-size: 55px;
@@ -370,3 +435,6 @@ dl dt .procent {
     background-color: var(--basic-gray);
 }
 
+.pagination {
+    list-style: none;
+}
