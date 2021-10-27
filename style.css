@@ -1,5 +1,3 @@
-
-
 :root {
     --basic-grey: #EEEEEE;
     --basic-black: #000000;
@@ -17,24 +15,60 @@
 
 
     --special-yellow: #EFC849;
-    --special-yellow-hover:  #EAB534;
+    --special-yellow-hover: #EAB534;
     --special-yellow-active: #E5A722;
-    
+
     --special-btn-social: #E1E1E1;
 
-    --special-grey-active: rgba (0,0,0,0.3);
-    
+    --special-grey-active: rgba(0, 0, 0, 0.3);
 
+    --special-basic-white: rgba(0, 0, 0, 0.3);
+
+    --special-black: #444444;
+
+
+
+}
+
+.hidden {
+    display: none;
 }
 
 body {
     font-family: "Roboto";
     margin: 0;
     padding: 0;
+    color: var(--basic-black);
+    font-size: 16px;
+}
+
+/* HEADER */
+
+h1 {
+    margin: 0;
+
+}
+
+.page-header {
+    background-color: var(--basic-grey);
+}
+
+.page-slogan {
+    background-color: var(--basic-grey);
+}
+
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.logo:active {
+    opacity: 0.3;
 }
 
 a {
     text-decoration: none;
+    color: var(--basic-black);
 }
 
 img {
@@ -43,26 +77,22 @@ img {
 }
 
 .page-navigation {
-    font-size: 16px;
     font-style: medium;
     line-height: 30px;
-    color: var(--basic-black);
 }
-
 
 .navigation-list {
     list-style: none;
+    margin-bottom: 0;
 }
 
 .navigation-item {
-
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
-    color: var(--basic-black);
+    font-weight: 500;
 
-4
-
+}
 .navigation-list a:hover {
     color: var(--special-red);
 }
@@ -71,7 +101,174 @@ img {
     color: var(--special-grey-active);
 }
 
-.navigation-list a:hover {
-    color: var(--special-red)
+
+/* MAIN */
+
+.slogan {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0;
 }
 
+.page-slogan:nth-child(3) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+    color: var(--basic-white);
+    border-radius: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.button-red {
+    background-color: var(--special-red);
+}
+
+.button-red:hover {
+    background-color: var(--special-red-hover);
+}
+
+.button-red:active {
+    background-color: var(--special-red-active);
+    color: var(--special-basic-white);
+}
+
+
+.button-green {
+    background-color: var(--special-green);
+}
+
+.button-green:hover {
+    background-color: var(--special-green-hover);
+}
+
+.button-green:active {
+    background-color: var(--special-green-active);
+    color: var(--special-basic-white);
+}
+
+
+
+.button-yellow {
+    background-color: var(--special-yellow);
+}
+
+.button-yellow :hover {
+    background-color: var(--special-yellow-hover);
+}.button-yellow :active {
+    background-color: var(--special-yellow-active);
+    color: var(--special-basic-white);
+}
+
+.products-list {
+    list-style: none;
+}
+
+.product-item h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .product-item p {
+
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      }
+.about-info .hidden+p {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.about-info .hidden+p+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-info .hidden+p+p+p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.orders li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.rezults-percentages td {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+
+}
+
+.rezults-name {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.partner-item a {
+    opacity: 0.2;
+}
+
+.partner-item a:hover {
+    opacity: 1;
+}
+
+.partner-item a:active {
+    opacity: 0.1;
+}
+
+
+/* FOOTER */
+
+.contacts {
+    background-color: var(--basic-white);
+}
+
+.contacts-name {
+    font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  }
+
+  .contacts-address {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+  }
+
+  .contacts-phone {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+
+  }
+
+
+  .discounts {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+
+  .discounts-for-friends {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--special-black)
+  }
