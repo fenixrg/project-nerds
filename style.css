@@ -1,0 +1,77 @@
+
+
+:root {
+    --basic-grey: #EEEEEE;
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+
+    --special-red: #FB565A;
+    --special-red-hover: #E74246;
+    --special-red-active: #D7373B;
+
+    --special-green: #00CA74;
+    --special-green-hover: #00BC6C;
+    --special-bardo-active: #00AA62;
+
+
+
+
+    --special-yellow: #EFC849;
+    --special-yellow-hover:  #EAB534;
+    --special-yellow-active: #E5A722;
+    
+    --special-btn-social: #E1E1E1;
+
+    --special-grey-active: rgba (0,0,0,0.3);
+    
+
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-navigation {
+    font-size: 16px;
+    font-style: medium;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-item {
+
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+
+4
+
+.navigation-list a:hover {
+    color: var(--special-red);
+}
+
+.navigation-list a:active {
+    color: var(--special-grey-active);
+}
+
+.navigation-list a:hover {
+    color: var(--special-red)
+}
+
