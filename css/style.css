@@ -27,10 +27,11 @@
          url("../fonts/roboto-bold.woff") format("woff");
 }
 
-
 :root {
     --basic-black:#000;
+    --black:#283136;
     --basic-gray: #EEEEEE;
+    --n: #ffffff;
     --basic-gray-border: #EEEEEE;
     --basic-border: #D7DCDE;
     --basic-border-hover:#B4B9BB;
@@ -55,6 +56,7 @@
     --basic-white-opacity30:rgba(255, 255, 255, 0.3);
     --basic-black-opacity30:rgba(0, 0, 0, 0.3);
     --basic-gray-filter:#4D4D4D;
+    --basic-shadow:rgba(0, 1, 1, 0.1);
 }
 
 /* Global */
@@ -82,6 +84,12 @@ img {
     height: auto;
 }
 
+
+.h1 {
+    font-family: "Roboto";
+    font-weight: 500; 
+}
+
 .button {
     text-transform: uppercase;
     text-align: center;
@@ -90,7 +98,13 @@ img {
     font-size: 16px;
     line-height: 18px;
     border: none;
+    border-radius: 3px;
 }
+
+.button:active {
+    box-shadow: inset 0px 3px 0px var(--basic-shadow);
+}
+
 
 .button-red {
     background-color: var(--basic-button-red);
@@ -294,8 +308,8 @@ figcaption {
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-  
 }
+
 dl dt .digit {
     font-weight: bold;
     font-size: 45px;
@@ -417,24 +431,166 @@ dl dt .procent {
     color:var(--basic-black);
 }
 
-/*Filter*/
-.filter input {
-    font:inherit;
-    background-color: transparent;
-    border: 2px solid var(--basic-gray-filter);
-}
-
-
 .name-catalog-page h1 {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
 }
 
+/*Filter*/
+
+.filter-cost input {
+    background: #EEEEEE;
+    border-radius: 3px;
+    border:none;
+}
+
+.filter-cost input {
+    background: #EEEEEE;
+    border-radius: 3px;
+    border:none;
+}
+
+.filter-grid input,
+.filter-features input {
+    font:inherit;
+    background-color: transparent;
+    border: 2px solid var(--basic-button-yellow);
+}
+
+.filter-grid input:hover,
+.filter-features input:hover {
+    border: 2px solid var(--basic-button-red);
+}
+
+.filter-grid input:disabled,
+.filter-features input:disabled {
+    border: 2px solid var(--basic-button-green);
+}
+
+.filter legend {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter-grid label,
+.filter-features label {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+}
+
+.filter-grid label:disabled,
+.filter-features label:disabled {
+    opacity: 30%;
+}
+
+/**/
+
+/*Sort*/
+.sorting {
+    list-style:none;
+}
+
+.sort p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.sorting-item a{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:var(--basic-black);
+}
+
+
+
+/*Product catalog*/
+
+.product-catalog .product-cards {
+    list-style: none;
+}
+
 .name-catalog-page {
     background-color: var(--basic-gray);
 }
 
+.popup {
+   text-align:center;
+}
+
+.popup .name-product {
+    color:inherit;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.popup .name-product:hover {
+    color:var(--basic-button-red);
+}
+
+.popup .name-product:active {
+    color:var(--basic-black-opacity30);
+}
+
+.button-red.button-price:active {
+    color:var(--basic-white);
+    opacity: 100%;
+}
+
+.popup p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+
+
+
+.product-cards-item:hover .browser{
+    opacity: 100%;
+}
+
+.product-cards-item .browser {
+    width: 360px;
+    height: 40px;
+    background-image: url("../img/state.svg");
+    background-repeat: no-repeat;
+    opacity: 12%;
+}
+
+
+.product-cards-item .popup{
+    visibility: hidden;
+}
+
+.product-cards-item:hover .popup{
+    visibility: visible;
+}
+
+.popup {
+    background-image: url("../img/popup.svg");
+    width: 360px;
+    height: 231px;
+    background-repeat: no-repeat;
+}
+
+/*Pagination*/
 .pagination {
     list-style: none;
+}
+
+.pagination-item .active {
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #DBDBDB;
 }
