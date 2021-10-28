@@ -47,8 +47,7 @@
     --basic-button-yellow-active:#E5A722;
     --basic-button-green:#00CA74;
     --basic-button-green-hover:#00BC6C;
-    --basic-button-green-active:
-    #00AA62;
+    --basic-button-green-active: #00AA62;
     --basic-gradient:linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
     --basic-gradient-hover:linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
     --basic-gradient-active:linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
@@ -75,7 +74,7 @@ body {
     background-repeat: no-repeat;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -85,9 +84,18 @@ img {
 }
 
 
-.h1 {
+h1 {
     font-family: "Roboto";
-    font-weight: 500; 
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .button {
@@ -183,14 +191,18 @@ img {
     list-style: none;
 }
 
-.page-navigation a, .user-navigation a{
-    color:var(--basic-black);
+.page-navigation a,
+.user-navigation a {
+    color: var(--basic-black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .page-header-logo:hover {
     opacity: 70%;
 }
-
 .page-navigation a:hover, .user-navigation a:hover{
     color:var(--basic-button-red);
 }
@@ -205,7 +217,7 @@ img {
 }
 
 .nav-cart::before {
-    background-image: url("../img/basket.svg");
+    background-image: url("../img/cart-icon-basket.svg");
 } 
 /* Features */
 .features-img {
@@ -388,7 +400,9 @@ dl dt .procent {
 
 /* Modal */
 .modal {
-    background-image: url("../img/bg-white.svg");
+    background-color: rgba(0, 0, 0, 0,4);
+    width: 960px;
+    height: 590px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -522,8 +536,34 @@ dl dt .procent {
     background-color: var(--basic-gray);
 }
 
+.product-cards-item:hover .browser{
+    opacity: 100%;
+}
+
+.product-cards-item .browser {
+    width: 360px;
+    height: 40px;
+    background-image: url("../img/state.svg");
+    background-repeat: no-repeat;
+    opacity: 12%;
+}
+
+/*Popup*/
+
+.product-cards-item .popup{
+    visibility: hidden;
+}
+
+.product-cards-item:hover .popup{
+    visibility: visible;
+}
+
 .popup {
-   text-align:center;
+    background-image: url("../img/popup.svg");
+    width: 360px;
+    height: 231px;
+    background-repeat: no-repeat;
+    text-align:center;
 }
 
 .popup .name-product {
@@ -553,44 +593,13 @@ dl dt .procent {
     line-height: 18px;
 }
 
-
-
-
-
-.product-cards-item:hover .browser{
-    opacity: 100%;
-}
-
-.product-cards-item .browser {
-    width: 360px;
-    height: 40px;
-    background-image: url("../img/state.svg");
-    background-repeat: no-repeat;
-    opacity: 12%;
-}
-
-
-.product-cards-item .popup{
-    visibility: hidden;
-}
-
-.product-cards-item:hover .popup{
-    visibility: visible;
-}
-
-.popup {
-    background-image: url("../img/popup.svg");
-    width: 360px;
-    height: 231px;
-    background-repeat: no-repeat;
-}
-
 /*Pagination*/
 .pagination {
     list-style: none;
 }
 
 .pagination-item .active {
-    background: rgba(0, 0, 0, 0.0001);
+    background: rgba(0, 0, 0, 0.1);
     border: 3px solid #DBDBDB;
 }
+
