@@ -150,28 +150,16 @@ width: 1160px;
 .features {
     display: grid;
     grid-template-columns: 1fr 760px;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-        "span img"
-        "p img"
-        "a img";
     margin-bottom: 73px;
 }
 
-.features-grid-span {
-    grid-area: span;
+
+.features-grid-one-column {
+    align-self: center;
 }
 
-.features-grid-p {
-    grid-area: p;
-}
-
-.features-grid-a {
-    grid-area: a;
-}
-
-.features-grid-img {
-    grid-area: img;
+.button-features {
+    padding: 13px 54px;
 }
 
 
@@ -186,6 +174,7 @@ width: 1160px;
 
 
 .products-list:last-child {
+   
     margin-right: 60px;
 }
 
@@ -209,23 +198,116 @@ width: 1160px;
 }
 
 .products-item h3 {
+    margin: 0;
     margin-bottom: 16px;
 }
 
 .products-item p {
+    margin: 0;
     margin-bottom: 32px;
 }
 
-.products-item a {
+.button-products-item {
     width: 160px;
-    height: 50px;
+    padding: 16px 40px;
+    box-sizing: border-box;  
 }
 
 
 
+.about {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    margin-bottom: 138px;
+}
+
+.about-grid {
+    align-self: center;
+}
+
+.about-grid span {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.about-grid .content {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.about-grid .content-two {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.about-list {
+    margin: 0;
+}
+
+.about-list .about-item {
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.about-list .about-item:last-child {
+    margin: 0;
+}
+
+.statistic-content figure {
+    margin: 0;
+    margin-bottom: 30px;
+} 
 
 
+.statistic-content figure img {
+    margin-bottom: 40px;
+} 
 
+.statistic-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+
+.statistic-content-grid dd {
+    grid-row: 2/3;
+    justify-self: start;
+    margin: 0;
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 100px;
+    margin: 0;
+    margin-bottom: 130px;
+    padding: 0 auto;
+    align-items: center;
+}
+
+.page-footer {
+    margin-bottom: 70px;
+}
+
+.contacts {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
 
