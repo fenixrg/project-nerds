@@ -9,45 +9,50 @@
         <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="favicon/180.png">
         <link rel="manifest" href="manifest.webmanifest">
-    </head>
-
-    <body class="page-body">
-        <header class="page-header">
-            <nav class="page-navigation">
-                <a href= "index.html" class="page-header-logo">
-                    <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
-                </a>
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a href="blank.html">Студия</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="blank.html">Клиенты</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="blank.html">Контакты</a>
-                    </li>
-                </ul>
-                <div class="user-navigation">
-                    <a class="nav-cart" href="blank.html">Корзина</a>
+        </head>
+        
+        <body class="page-body">
+            <header class="page-header">
+        
+                <div class="wrapper">
+                    <nav class="page-navigation">
+                        <a href="index.html" class="page-header-logo">
+                            <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
+                        </a>
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a href="blank.html">Студия</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="blank.html">Клиенты</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="catalog.html">Магазин</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="blank.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="user-navigation">
+                            <a class="nav-cart" href="blank.html">Корзина</a>
+                        </div>
+                    </nav>
                 </div>
-                
-            </nav>
-        </header>
+            </header>
 
-        <main class="wrapper">
+        <main class="page-main">
+            <div class="page-bar">
             <h1 class="hidden">Интернет магазин Nerds</h1>
-            <section class="features">
+            <section class="features wrapper">
                 <h2 class="hidden">Преимущества</h2>
-                <span>Долго, дорого,<br> скурпулезно.</span>
-                <p class="content">Математически выверенный дизайн<br>для вашего сайта или мобюильного приложения.</p>
-                <a  class="button button-red" href="blank.html">Узнать больше</a>
-                <img class="features-img" src="img/telephons.png" width="760px" height="431px" alt="Телефоны">
+                <span class="features-grid-span">Долго, дорого,<br> скурпулезно.</span>
+                <p class="content features-grid-p">Математически выверенный дизайн<br>для вашего сайта или мобюильного приложения.</p>
+                <a  class="button button-red features-grid-a" href="blank.html">Узнать больше</a>
+                <img class="features-img features-grid-img" src="img/telephons.png" width="760px" height="431px" alt="Телефоны">
             </section>
+            </div>
 
+            <div class="wrapper">
             <div class="index--tree-columns">
                 <section class="products">
                     <h2 class="hidden">Продукты</h2>
@@ -153,12 +158,13 @@
                         </li>
                     </ul>
                 </section>
-            </div>
+            </div>  
+        </div>
         </main>
 
 
 
-        <footer class="page-footer">
+        <footer class="page-footer wrapper">
             <section class="contacts">
                 <h2 class="hidden">Контакты</h2>
                 <span>NЁRDS DESIGN STUDIO</span>
@@ -204,6 +210,7 @@
             </section>
         </footer>
 
+        <!-- 
         <section class="modal">
             <h2>Напишите нам</h2>
             <img class="close" src="img/close.svg" width="21" height="21">
@@ -224,7 +231,7 @@
                 <button class ="button button-red" type="submit">Отправить</button>
             </form>
         </section>
-
+         -->
 
     </body>
 
