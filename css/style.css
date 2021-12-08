@@ -72,9 +72,7 @@ body {
     background-color: var(--basic-white);
     background-position: top center;
     background-repeat: no-repeat;
-    border: 5px solid red;
     position: relative;
-   
 }
 
 a {
@@ -658,17 +656,13 @@ dl dt .procent {
     
 }
 
-.social-button:active path {
-    fill: rgba(255,255,255, 0.3);
-}
-
-
-.social-item a:hover {
+.social-button:hover {
     background: var(--basic-gradient-hover);
 }
 
-.social-item a:active {
+.social-button:active path {
     background: var(--basic-gradient-active);
+    fill: rgba(255,255,255, 0.3);
 }
 
 /* Copyright */
@@ -689,26 +683,27 @@ dl dt .procent {
 
 /* Modal */
 .modal {
-    box-sizing: border-box;
-    padding: 63px 57px 84px 90px;   
+  
+    padding: 57px 99px 90px 100px;   
     background-color: var(--basic-white);
     width: 960px;
-    height: 590px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     position: absolute;
-    bottom: 180px;
-    left: 50%;
-    right: 50%;
-    
+    bottom: 650px;
+    left: 33%;
 }
 
-
-
+.modal p {
+    padding: 0;
+    margin: 0;
+}
 
 .modal h2 {
     font-weight: bold;
     font-size: 45px;
     line-height: 53px;
+    display: block;
+    margin-bottom: 37px;
 }
 
 .modal label {
@@ -743,6 +738,8 @@ textarea:hover {
 .close:active {
     opacity: 10%;
 }
+
+
 
 /*Catalog*/
 .button-black-font {
@@ -940,11 +937,16 @@ textarea:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
+    
 }
 
 form p {
     display: flex;
     flex-direction: column;
+}
+
+form p:first-child {
+    margin-bottom: 34px;
 }
 
 form input {
@@ -953,6 +955,8 @@ form input {
 
 form textarea {
     padding: 16px;
+    margin-bottom: 47px;
+    resize: none;
 }
 
 form p:nth-child(3) {
@@ -965,10 +969,11 @@ form button {
     padding: 17px 83px;
 }
 
-.modal-input1 {
-    width: 360px;
-    height: 50px;
+form label {
+    margin-bottom: 9px;
 }
+
+
 
 
 /*Flex Header*/
