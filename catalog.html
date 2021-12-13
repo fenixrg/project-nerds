@@ -50,14 +50,22 @@
                 <form method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-cost">
                         <legend>Стоимость:</legend>
-                        <input type="range" min="0" max="15000" name="price">
-                        <p>
-                            <label>От<input type="text" name="start" value="0"></label>
-                            <label>До<input type="text" name="end" value="15000"></label>
-                        </p>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от<input type="number" name="min-price" value="0"></label>
+                                <label class="max-price">до<input type="number" name="max-price" value="15000"></label>
+
+                            </div>
+                        </div>
 
                     </fieldset>
-
                     <fieldset class="filter-grid">
                         <legend>Сетка:</legend>
                         <p>
@@ -155,7 +163,7 @@
                                 <a class="name-product" href="#">Sedona</a>
                                 <p>Информационный сайт для туристов</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
 
@@ -167,7 +175,7 @@
                                 <a class="name-product" href="#">Pink App</a>
                                 <p>Продуктовый лендингприложения для iOS и Android</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
                         </li>
@@ -180,7 +188,7 @@
                                 </a>
                                 <p>Сайт салона красоты.Для мужчин, да.</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
                         </li>
@@ -193,7 +201,7 @@
                                 </a>
                                 <p>Интернет-магазин вязаных игрушек</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
                         </li>
@@ -206,7 +214,7 @@
                                 </a>
                                 <p>Лендинг курсов повышения квалификации</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
                         </li>
@@ -219,14 +227,13 @@
                                 </a>
                                 <p>Промо-сайт производителякрафтового кваса</p>
                                 <p>
-                                    <a class="button button-red button-price" href="#">9 900 p</a>
+                                    <a class="button button-red button-price button-catalog-item" href="#">9 900 p</a>
                                 </p>
                             </div>
                         </li>
                     </ul>
 
                     <ul class="pagination">
-
                         <li class="pagination-item">
                             <a class="button button-gray button-black-font active">1</a>
                         </li>
@@ -310,7 +317,7 @@
         </div>
     </footer>
 
-    <section class="modal">
+    <!-- <section class="modal">
         <h2 class="modal-h2">Напишите нам</h2>
         <img class="close" src="img/close.svg" width="21" height="21">
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -329,7 +336,8 @@
             </p>
             <button class="button button-red modal-button" type="submit">Отправить</button>
         </form>
-    </section>
+        </section>
+        -->
 
 
 </body>
