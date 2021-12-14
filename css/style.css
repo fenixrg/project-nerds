@@ -914,12 +914,30 @@ textarea:hover {
     font-size: 16px;
     line-height: 20px;
     color: var(--black);
+    position: relative;
+    padding-left: 36px;
 }
 
 .filter-grid label:disabled,
 .filter-features label:disabled {
     opacity: 30%;
 }
+
+.filter-grid label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--basic-gray-filter);
+    border: var(--basic-button-red);
+
+
+
+}
+
+
 
 /**/
 
