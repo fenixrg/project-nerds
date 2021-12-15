@@ -102,8 +102,6 @@ h2 {
     height: 100%;
 }
 
-
-
 .page-body {
     min-height: 100%;
     display: grid;
@@ -113,22 +111,9 @@ h2 {
 
 
 
-.page-navigation {
-    display: grid;
-    grid-template-columns: 160px 1fr min-content;
-    margin-bottom: 78px;
-}
-
 .wrapper {
     margin: 0 auto;
     width: 1160px;
-}
-
-
-.page-bar {
-    background-color: var(--basic-gray);
-    position: relative;
-    margin-bottom: 80px;
 }
 
 .features {
@@ -138,10 +123,7 @@ h2 {
     
 }
 
-
-
-
-
+/*SLIDER*/
 
 .slider {
 display: grid;
@@ -152,8 +134,6 @@ grid-template-columns: 1fr 760px;
     display: none;
 }
 
-
-
 .slider-controls {
     position: absolute;
     left: 536px;
@@ -162,8 +142,6 @@ grid-template-columns: 1fr 760px;
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .slider-controls button {
     padding: 0;
@@ -190,7 +168,6 @@ grid-template-columns: 1fr 760px;
 
 }
 
-
 .products-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -199,7 +176,6 @@ grid-template-columns: 1fr 760px;
     margin: 0;
     margin-bottom: 129px;
 }
-
 
 .products-list:last-child {
 
@@ -241,7 +217,6 @@ grid-template-columns: 1fr 760px;
     box-sizing: border-box;
 }
 
-
 .about {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -274,7 +249,7 @@ grid-template-columns: 1fr 760px;
 
 .about-list .about-item {
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 34px;
     position: relative;
    
     padding-left: 32px;
@@ -303,7 +278,7 @@ grid-template-columns: 1fr 760px;
 
 
 .statistic-content figure img {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 }
 
 .statistic-content-grid {
@@ -311,8 +286,8 @@ grid-template-columns: 1fr 760px;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 5px;
+    margin: 0;
 }
-
 
 .statistic-content-grid dd {
     grid-row: 2/3;
@@ -320,15 +295,6 @@ grid-template-columns: 1fr 760px;
     margin: 0;
 }
 
-.partners-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 100px;
-    margin: 0;
-    margin-bottom: 130px;
-    padding: 0 auto;
-    align-items: center;
-}
 
 .page-footer {
     margin-top: 60px;
@@ -350,7 +316,6 @@ grid-template-columns: 1fr 760px;
  text-align: center;
 
 }
-
 
 .social-grid {
     display: grid;
@@ -382,7 +347,6 @@ grid-template-columns: 1fr 760px;
 .button:active {
     box-shadow: inset 0px 3px 0px var(--basic-shadow);
 }
-
 
 .button-red {
     background-color: var(--basic-button-red);
@@ -447,18 +411,15 @@ grid-template-columns: 1fr 760px;
 /* Main navigation*/
 .page-header {
     background-color: var(--basic-gray);
+    margin-bottom: 70px;
 }
 
-.page-main {
+.page-bar {
     background-color: var(--basic-gray);
+    position: relative;
+    margin-bottom: 80px;
 }
 
-.page-navigation {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--basic-black);
-}
 
 .main-header-logo {
     background-color: var(--basic-gray);
@@ -466,6 +427,15 @@ grid-template-columns: 1fr 760px;
 
 .navigation-list {
     list-style: none;
+}
+
+.navigation-item {
+ position: relative;  
+}
+
+.navigation-item-current {
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--basic-button-red);
 }
 
 .page-navigation a,
@@ -514,13 +484,6 @@ grid-template-columns: 1fr 760px;
     background-repeat: no-repeat;
 }
 
-.navigation-item-current {
-    padding-bottom: 12px;
-    border-bottom: 2px solid var(--basic-button-red);
-}
-
-
-
 
 /* Features */
 .features-img {
@@ -568,7 +531,6 @@ grid-template-columns: 1fr 760px;
     line-height: 30px;
 }
 
-
 /* About */
 .about span {
     font-weight: 500;
@@ -594,16 +556,49 @@ grid-template-columns: 1fr 760px;
 }
 
 /* Partners*/
+
+.partners-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 130px;
+    padding: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.partners-list::before {
+    content: "";
+    height: 2px;
+    width: 1158px;
+    position: absolute;
+    bottom: 120px;
+    background-color: var(--basic-gray);
+}
+
+.partners-list::after {
+    content: "";
+    height: 2px;
+    width: 1158px;
+    position: absolute;
+    top: 120px;
+    background-color: var(--basic-gray);
+}
+
+.partners-item {
+    position: relative;
+    align-self: center;
+}
+
 .partners-item img {
     background-color: val(--basic-gray);
 }
 
-.partners-list {
-    list-style: none;
-}
-
 .partners-item a {
     opacity: 20%;
+    display: block;
+    vertical-align: middle;
 }
 
 .partners-item a:hover {
@@ -615,9 +610,7 @@ grid-template-columns: 1fr 760px;
 }
 
 /* Statistic content*/
-.ill-logo {
-    background-color: val(--basic-gray);
-}
+
 
 figcaption {
     font-weight: bold;
@@ -1039,11 +1032,6 @@ textarea:hover {
     background-repeat: no-repeat;
 }
 
-
-
-
-/**/
-
 /*Sort*/
 .sorting {
     list-style: none;
@@ -1063,8 +1051,6 @@ textarea:hover {
     text-transform: uppercase;
     color: var(--basic-black);
 }
-
-
 
 /*Product catalog*/
 
@@ -1148,8 +1134,6 @@ textarea:hover {
     padding: 17px 72px 17px 72px;
 }
 
-
-
 /*Catalog*/
 
 /*Grid*/
@@ -1161,7 +1145,6 @@ textarea:hover {
 
 }
 
-
 .product-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1170,8 +1153,6 @@ textarea:hover {
     padding: 0px;
     margin: 0px;
 }
-
-
 
 .modal form {
     display: grid;
@@ -1213,28 +1194,25 @@ form label {
     margin-bottom: 9px;
 }
 
-
-
-
 /*Flex Header*/
 
 .page-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 48px;
-    margin-bottom: 87px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
 }
-
-
-
 .navigation-list {
     width: 430px;
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    align-self: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1243,7 +1221,6 @@ form label {
     align-self: center;
     padding-left: 50px;
 }
-
 
 /*Flex Catalog*/
 
@@ -1316,14 +1293,9 @@ form label {
 .filter-features {
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     border: none;
 }
-
-.filter-cost {
-    margin-bottom: 54px;
-}
-
 
 .filter-cost legend {
     margin-bottom: 48px;
@@ -1345,9 +1317,6 @@ form label {
 .filter-features {
     margin-bottom: 48px;
 }
-
-
-
 
 .filter-button {
     padding: 0;
